@@ -55,4 +55,38 @@ body{
 
 .navbar{
     padding: 10px 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* <!-- Hero Section --> */
+.hero{
+    margin-top: 20px;
+}
+
+.hero-header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.btn-explore{
+    background-color: #B92946;
+    height: 55px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    color: white;
+    font-weight: 700;
+    width: 300px;
+}
+
+.lead{
+    font-weight: 400;
+}
+
+.btn-log-in{
+    background-color: white;
+    height: 55px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    color: black;
+    font-weight: 700;
+    width: 300px;
 }
