@@ -1,92 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    margin: 10px;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(248, 245, 245);
 }
 
-.navbar-nav{
-    align-items: center;
-    gap: 30px;
-}
-
-.navbar-brand{
-    margin-right: 10px;
+.navbar-brand {
     color: #B92946;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     font-weight: 900;
 }
 
-.courses-item .nav-link{
-    background-color: #B92946;
-    color: white;
-    font-weight: 700;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 8px;
-    border-radius: 12px;
-    width: 110px;
-    height: 40px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
-    display: flex;
-    justify-content: center;
+.navbar-nav {
     align-items: center;
+    gap: 15px;
 }
 
-.nav-link{
+.nav-link {
     color: black;
-    font-weight: 900;
+    font-weight: 700;
 }
 
-.nav-item input{
-    width: 400px;
-    padding: 9px;
+.search-input {
+    width: 100%;
+    max-width: 400px;
     border-radius: 20px;
+    padding: 8px 16px;
 }
 
-.log-in-item .nav-link{
-    background-color: white;
-    border: solid 0.5px grey;
-    width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
-}
-
-.navbar{
+.navbar {
     padding: 10px 20px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* <!-- Hero Section --> */
-.hero{
-    margin-top: 20px;
+/* Hero Section */
+.hero {
+    margin-top: 80px; /* Adjusted for fixed navbar */
 }
 
-.hero-header{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.hero-header {
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 
-.btn-explore{
+.highlight-text {
+    color: #B92946;
+}
+
+.btn-explore {
     background-color: #B92946;
-    height: 55px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
     color: white;
     font-weight: 700;
-    width: 300px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.lead{
-    font-weight: 400;
-}
-
-.btn-log-in{
+.btn-log-in {
     background-color: white;
-    height: 55px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
     color: black;
     font-weight: 700;
-    width: 300px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* search-for-courses */
+.search-for-courses {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.form-fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.form-select, .form-control {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.btn-search {
+    height: 50px;
+    font-weight: 300;
+    border-radius: 8px;
+    background-color: #f1cad2;
+    color: #B92946;
+    border: none;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .search-input {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .hero-header {
+        font-size: 2rem;
+    }
+
+    .btn-explore,
+    .btn-log-in {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-header {
+        font-size: 1.75rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-header {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .btn-explore,
+    .btn-log-in {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }
