@@ -218,7 +218,87 @@ body {
     margin-top: 20px; 
   }
 
+  /* short courses */
+  .short-course{
+    background-color: yellow;
+    padding: 20px;
+    width: 250px;
+    height: 370px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    margin-bottom: 50px;
+  }
 
+  .short-course-header{
+    font-weight: 700;
+  }
+
+  .all-box{
+    gap: 20px;
+  }
+  .short-course-content{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+.explore-btn{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    margin-top: 20px;
+}
+
+.course-image{
+    height: 50%;
+}
+
+.coureses-box{
+    background-color: white;
+    width: 250px;
+    height: 370px;
+}
+
+.course-content{
+    padding: 7px;
+}
+.course-header{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.coureses-box p{
+    font-size: 10px;
+    margin-top: -2px;
+}
+
+.course-price{
+    font-weight: 700;
+}
+
+.course-price del{
+    font-size: 12px;
+    color: gray;
+    margin-top: -2px;
+}
+
+.course-price2{
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.course-btn{
+    background-color: white;
+    padding: 7px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: #018E97;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+}
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     .navbar-nav {
@@ -238,6 +318,11 @@ body {
     .btn-log-in {
         width: 100%;
     }
+
+    .col-md-3 {
+        flex: 0 0 50%; 
+        max-width: 50%;
+      }
 }
 
 @media (max-width: 768px) {
@@ -274,6 +359,11 @@ body {
     .popular-intro {
         font-size: 14px;
     }
+
+    .col-md-3 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+      }
 }
 
 
